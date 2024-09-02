@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int treasureWeights[] = {5, 3, 7, 2, 4}; // Assuming the weights of the 5 treasures are stored in an array
+
+    int totalWeight = 0;
+    int numTreasures = sizeof(treasureWeights) / sizeof(treasureWeights[0]); // Get the number of treasures
+
+    for (int i = 0; i < numTreasures; i++) {
+        totalWeight += treasureWeights[i]; // Accumulate the total weight
+    }
+
+    printf("Total weight of treasures collected: %d\n", totalWeight);
+
+    return 0;
+}
